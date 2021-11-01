@@ -38,6 +38,10 @@ img {
   display: block;
 }
 
+textarea {
+  resize: none;
+}
+
 .list {
   list-style: none;
 }
@@ -250,10 +254,9 @@ nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 100px;
   min-width: 528px;
   min-height: 521px;
-  padding: 15px;
+  padding: 40px;
   border-radius: 4px;
   z-index: 10;
   background-color: var(--white-color);
@@ -293,6 +296,70 @@ nav {
 .overlay-button:hover,
 .overlay-button:focus {
   color: var(--accent-color);
+}
+
+/* оформление формы */
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form-data {
+  max-width: 448px;
+  outline: 1px solid tomato;
+  margin: 0 auto;
+}
+
+.form-field {
+  outline: 1px solid teal;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-checkbox {
+  margin-bottom: 30px;
+}
+
+.form-label {
+  margin-right: auto;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.modal-form-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 55px;
+  padding-left: 56px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.form-input {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 /* section */
 
@@ -549,6 +616,62 @@ nav {
 
 .footer-section:not(:last-child) {
   margin-right: 70px;
+}
+
+.footer-section.social {
+  margin-right: 93px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-input {
+  margin: 0;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-input:placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-button {
+  border: 3px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 29px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-button:hover,
+.subscription-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.telegram-icon {
+  margin-left: 10px;
+  fill: currentColor;
 }
 
 /* logo bottom */
